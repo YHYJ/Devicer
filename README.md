@@ -1,2 +1,2 @@
-# input-device-monitor
-输入设备活动监控
+# Device-activity-monitor
+设备活动监控
