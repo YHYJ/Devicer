@@ -7,7 +7,7 @@ setup(
     author='YJ',
     author_email='yj1516268@outlook.com',
     url='https://github.com/YHYJ/Device-activity-monitor',
-    license='MIT',
+    license='GPL-3.0',
     packages=find_packages(exclude=[]),
     include_package_data=True,
     zip_safe=False,
