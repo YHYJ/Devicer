@@ -1,4 +1,4 @@
-from swipe.utils.constants import KEY_CODE
-from swipe.utils.findevices import alldevices as allDevices
-from swipe.utils.findevices import device
-from swipe.utils.kvc2kv import kvc2kv
+from devicer.utils.constants import KEY_CODE
+from devicer.utils.findevices import alldevices as allDevices
+from devicer.utils.findevices import device
+from devicer.utils.kvc2kv import kvc2kv

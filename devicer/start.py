@@ -13,7 +13,7 @@ from select import select
 
 from evdev import InputDevice
 
-from swipe.utils import allDevices, device, kvc2kv
+from devicer.utils import allDevices, device, kvc2kv
 
 
 def ultimate(device_keyword: str):

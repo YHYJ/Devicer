@@ -8,7 +8,7 @@ Created Time: 2019-03-28 10:12:31
 keyvalue code --> keyvalue
 """
 
-from swipe.utils import KEY_CODE
+from devicer.utils import KEY_CODE
 
 
 def kvc2kv(code: int):

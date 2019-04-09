@@ -14,7 +14,7 @@ setup(
     install_requires=['evdev', 'toml'],
     entry_points={
         'console_scripts': [
-            'findevices=swipe:allDevices',
+            'findevices=devicer:allDevices',
         ],
     },
     classifiers=[
