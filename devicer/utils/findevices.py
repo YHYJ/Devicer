@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Author: YJ
+Email: yj1516268@outlook.com
+Created Time: 2019-03-28 09:41:27
+
+find all devices
+"""
+
+import re
+
+from evdev import InputDevice, list_devices
+
+
+def device(device_keyword: str):
+    """Find the specified device from all devices.
+
+    :device_keyword: str: specify device's keyword
+    :returns: specify device or False
+
+    """
+    devs = [InputDevice(dev) for dev in list_devices()]
+
+    for dev in devs:
+        if re.search(device_keyword, dev.phys):
+            device = dev.path
+            return device
+
+    return False
+
+
+def alldevices():
+    """Find all devices. """
+    devs = [InputDevice(dev) for dev in list_devices()]
+    print('{}  |  {}  |  {}'.format('device path', 'device name',
+                                    'device type'))
+    for dev in devs:
+        print('{}  |  {}  |  {}'.format(dev.path, dev.name, dev.phys))
+
+
+if __name__ == "__main__":
+    alldevices()
