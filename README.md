@@ -1,2 +1,2 @@
-# Device-activity-monitor
+# Devicer
 Linux - device activity monitor
