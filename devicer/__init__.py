@@ -1,3 +1,4 @@
+name = "devicer"
 from devicer.start import ultimate
 from devicer.utils.constants import KEY_CODE
 from devicer.utils.findevices import alldevices as allDevices
