@@ -2,25 +2,46 @@
 
 ---
 
-Linux - device activity monitor
+Linux输入设备活动监视器
 
 ---
 
-## install requires
+### 运行环境
+
+- Linux
+- `python --version` >= 3.6
+
+---
+
+### 依赖
 
 - [evdev](<https://github.com/gvalkov/python-evdev>)
 - [toml](<https://github.com/toml-lang/toml>)
 
 ---
 
-## available commands
+### 安装方法
 
 ```shell
-# findevices
-device path  |  device name  |  device type
-/dev/input/event16  |  HDA Intel PCH HDMI/DP,pcm=10  |  ALSA
-...
-/dev/input/event0  |  Power Button  |  PNP0C0C/button/input0
+# 在'Devicer'文件夹下
+pip install .
+```
+
+> **注意：**
+>
+> 1. 不要遗漏最后的 **`.`**
+> 2. `pip --version` >= 3.6
+
+---
+
+### 可用命令
+
+```shell
+findevices			# 需要以root权限运行
+> device path  |  device name  |  device type
+> /dev/input/event16  |  HDA Intel PCH HDMI/DP,pcm=10  |  ALSA
+> ...
+> /dev/input/event0  |  Power Button  |  PNP0C0C/button/input0
 ```
 
 ---
