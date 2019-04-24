@@ -16,7 +16,6 @@ Linux输入设备活动监视器
 ### 依赖
 
 - [evdev](<https://github.com/gvalkov/python-evdev>)
-- [toml](<https://github.com/toml-lang/toml>)
 
 ---
 
