@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='devicer',
-    version='1.0a2',
+    version='1.0a3',
     description='Linux - device activity monitor',
     author='YJ',
     author_email='yj1516268@outlook.com',
